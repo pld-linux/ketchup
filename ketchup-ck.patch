@@ -1,5 +1,5 @@
---- ketchup-0.9.8.orig/ketchup
-+++ ketchup-0.9.8/ketchup
+--- ketchup-0.9.8/ketchup
++++ /tmp/mm	2006-07-31 01:33:52.816634714 +0300
 @@ -217,19 +217,10 @@
      return part[:-1]
  
@@ -10,7 +10,7 @@
 -    pre = part[:-1]
 -
 -    url = "http://ck.kolivas.org/patches/2.6/"
-+    url = "http://www.kernel.org/pub/linux/kernel/people/ck/patches/2.6/"
++    url = kernel_url + '/people/ck/patches/2.6/'
      url += last(url,"(2.6.*/)")
      part = last(url)
 -    rel = part[:-1]
