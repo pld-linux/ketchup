@@ -1,0 +1,42 @@
+--- ketchup-0.9.8.orig/ketchup
++++ ketchup-0.9.8/ketchup
+@@ -217,19 +217,10 @@
+     return part[:-1]
+ 
+ def latest_ck(url, pat):
+-    url = "http://ck.kolivas.org/patches/2.6/pre-releases/"
+-    url += last(url)
+-    part = last(url)
+-    pre = part[:-1]
+-
+-    url = "http://ck.kolivas.org/patches/2.6/"
++    url = "http://www.kernel.org/pub/linux/kernel/people/ck/patches/2.6/"
+     url += last(url,"(2.6.*/)")
+     part = last(url)
+-    rel = part[:-1]
+-
+-    l = [pre, rel]
+-    l.sort(compare_ver)
+-    return l[-1]
++    return part[:-1]
+ 
+ def latest_dir(url, pat):
+     """Find the latest link matching pat at url after sorting"""
+@@ -600,14 +591,12 @@
+                r'patch-(2.6.*?)',
+                0, "Ingo Molnar's realtime-preempt kernel"),
+     '2.6-ck': (latest_ck,
+-               ["http://ck.kolivas.org/patches/2.6/" +
+-                "%(prebase)s/%(full)s/patch-%(full)s.bz2",
+-                "http://ck.kolivas.org/patches/2.6/pre-releases/" +
+-                "%(prebase)s/%(full)s/patch-%(full)s.bz2"],
++               "http://www.kernel.org/pub/linux/kernel/people/ck/patches/2.6/" +
++               "%(prebase)s/%(full)s/patch-%(full)s.bz2",
+                "", ".sig",
+                "Con Kolivas' patches for system responsiveness (desktop)"),
+     '2.6-cks': (latest_dir,
+-                "http://ck.kolivas.org/patches/cks/patch-%(full)s.bz2",
++                "http://www.kernel.org/pub/linux/kernel/people/ck/patches/cks/patch-%(full)s.bz2",
+                 r'patch-(2.6.*?).bz2', ".sig",
+                 "Con Kolivas' patches for system responsiveness (server)")
+     }
