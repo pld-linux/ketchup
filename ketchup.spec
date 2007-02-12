@@ -1,5 +1,5 @@
 Summary:	Update utility for Linux kernel sources
-Summary(pl.UTF-8):   Narzędzie do uaktualniania źródeł jądra Linuksa
+Summary(pl.UTF-8):	Narzędzie do uaktualniania źródeł jądra Linuksa
 Name:		ketchup
 Version:	0.9.8
 Release:	1
