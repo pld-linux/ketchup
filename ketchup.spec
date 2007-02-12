@@ -1,5 +1,5 @@
 Summary:	Update utility for Linux kernel sources
-Summary(pl):	Narzêdzie do uaktualniania ¼róde³ j±dra Linuksa
+Summary(pl.UTF-8):   NarzÄ™dzie do uaktualniania ÅºrÃ³deÅ‚ jÄ…dra Linuksa
 Name:		ketchup
 Version:	0.9.8
 Release:	1
@@ -19,13 +19,13 @@ automatically. It can search for the newest kernel in numerous trees
 It can also automatically download the needed patches (and apply them)
 to create the newest repository from an old one.
 
-%description -l pl
-To narzêdzie potrafi automatycznie uaktualniaæ (lub instalowaæ) ¼ród³a
-j±dra Linuksa. Mo¿e szukaæ najnowszego j±dra w ró¿nych drzewach
+%description -l pl.UTF-8
+To narzÄ™dzie potrafi automatycznie uaktualniaÄ‡ (lub instalowaÄ‡) ÅºrÃ³dÅ‚a
+jÄ…dra Linuksa. MoÅ¼e szukaÄ‡ najnowszego jÄ…dra w rÃ³Å¼nych drzewach
 (vanilla, rc, tiny, mm, mjb itp.).
 
-Potrafi tak¿e automatycznie ¶ci±gaæ potrzebne ³aty (i nak³adaæ je),
-aby stworzyæ najnowsze repozytorium ze starszego.
+Potrafi takÅ¼e automatycznie Å›ciÄ…gaÄ‡ potrzebne Å‚aty (i nakÅ‚adaÄ‡ je),
+aby stworzyÄ‡ najnowsze repozytorium ze starszego.
 
 %prep
 %setup -qc
